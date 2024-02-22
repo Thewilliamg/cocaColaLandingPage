@@ -19,7 +19,7 @@
     position:absolute;
     left:0;
     background: #000;
-    width: 70%;
+    width: 80%;
     height: 100%;
 }
 
@@ -60,7 +60,7 @@
     color: #ec1321;
     background: transparent;
     cursor: pointer;
-    transition: 0.2s ease;
+    transition: 0.4s ease;
 }
 
 .content-button button:nth-child(1){
@@ -75,7 +75,7 @@ button:hover{
 }
 .right{
     position: absolute;
-    width: 30%;
+    width: 20%;
     height: 100%;
     right: 0;
     background: #ec1321;
@@ -93,10 +93,13 @@ button:hover{
 }
 
 .header #logo{
-    color: #ec1321;
+    color: #c83640;
     font-family: 'Brush Script MT';
-    position: relative;
-    margin: 30px 130px;
+    display: flex;
+    justify-content: start;
+    align-self: center;
+    position: absolute;
+    left: 9%;
     font-weight: bold;
 }
 
@@ -106,8 +109,8 @@ button:hover{
     justify-content: center;
     align-items: center;
     display: flex;
-    left: 35%;
     position: absolute;
+    left: 35%;
     top: 0;
 }
 
@@ -124,11 +127,14 @@ button:hover{
 .menu a:nth-child(1){
     color: #ec1321;
     font-weight: bold;
-}    
+    font-size: 15px;
+}
+    
 .menu a::after{    
     content: '';
     position: absolute;
-    width: 0;
+    width: 0%; /*Este width en 0 hace que desaparezca la barra inferior*/
+    font-size: 90px;
     height: 3px;
     bottom: 0;
     background: #ec1321;
@@ -147,7 +153,33 @@ button:hover{
 
 img{
     height: 600px;
-    right: 0;
-    top: 17%;
+    right: 6%;
+    top: 15%;
     position: absolute;
-} */
+}
+
+ .media-shop{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    right: 0;
+    justify-content: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.media-shop svg{
+    width: 30px;
+}
+
+.media-shop a:nth-child(1) svg{
+    margin:10px;
+}
+
+.media-shop a:nth-child(3) svg{
+    margin:10px;
+}
+
+.media-shop path{
+    fill: #fff; 
+}
