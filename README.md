@@ -19,3 +19,5 @@ elemento:hover{
 }
 
 bottom:0 situa un pseudo elemento en la parte inferior de un elemento
+
+z-index:999 para pasar los elementos al frente de todo
